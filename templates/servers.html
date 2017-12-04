@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+<title>Halo Servers</title>
+<META HTTP-EQUIV="refresh" CONTENT="15">
+</head>
+<body>
+    <h1>HALO-PROTECTED SERVERS</h1>
+<table>
+  <tr>
+    <td>Agent ID</td>
+    <td>Hostname</td>
+  </tr>
+{% for server in servers %}
+  <tr>
+    <td>{{ server.id }}</td>
+    <td>{{ server.hostname }}</td>
+  </tr>
+{% endfor %}
+</table>
+</body>
