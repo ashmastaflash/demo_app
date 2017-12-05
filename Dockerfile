@@ -12,6 +12,7 @@ RUN apt-get update && \
 RUN pip install \
     flask \
     cloudpassage \
+    colorama \
     pytest
 
 # RUN echo 'deb https://production.packages.cloudpassage.com/debian debian main' | tee /etc/apt/sources.list.d/cloudpassage.list > /dev/null
