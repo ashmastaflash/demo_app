@@ -1,8 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 MAINTAINER Ash Wilson
 
 RUN apt-get update && \
     apt-get install -y \
+    bash=4.3-6ubuntu1 \
     apt-transport-https \
     curl \
     python \
