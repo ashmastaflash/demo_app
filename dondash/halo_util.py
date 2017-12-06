@@ -44,7 +44,7 @@ class SecurityReporter(object):
             raw_scan_results.append(results)
         # Process and print scan results
         self.print_pretty_scans(raw_scan_results)
-        if [x for x in scan_types if x["critical_findings_count" != 0] and os.getenv("FAIL_ON_CRITICAL"):
+        if [x for x in scan_types if x["critical_findings_count"] != 0] and os.getenv("FAIL_ON_CRITICAL"):
                 print("CRITICAL FINDINGS! HARD_FAIL!!")
         return
 
