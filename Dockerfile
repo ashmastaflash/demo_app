@@ -24,7 +24,7 @@ RUN apt-get update && \
 COPY ./ /app/
 WORKDIR /app
 
-RUN touch /app/testfile && rm /app/testfile
+RUN touch /app/testfile  # && rm /app/testfile
 
 ENV FLASK_APP=runner.py
 
