@@ -3,10 +3,9 @@ MAINTAINER Ash Wilson
 
 RUN apt-get update && \
     apt-get install -y --force-yes \
-    # bash=4.3-6ubuntu1 \
+    bash=4.3-6ubuntu1 \
     apt-transport-https \
     curl \
-    nginx \
     python \
     python-pip
 
