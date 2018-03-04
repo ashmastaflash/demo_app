@@ -6,6 +6,7 @@ RUN apt-get update && \
     apt-get install -y --force-yes \
     apt-transport-https \
     bash=4.3-6ubuntu1 \
+    libjpeg-turbo8=1.3.0-0ubuntu2 \
     curl \
     nginx \
     python \
