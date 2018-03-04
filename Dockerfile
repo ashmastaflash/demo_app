@@ -1,10 +1,11 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 MAINTAINER Ash Wilson
 
 RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
+    # apt-get upgrade -y && \
+    apt-get install -y --force-yes \
     apt-transport-https \
+    bash=4.3-6ubuntu1 \
     curl \
     nginx \
     python \
