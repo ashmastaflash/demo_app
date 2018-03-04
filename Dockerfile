@@ -8,11 +8,11 @@ RUN apt-get update && \
     bash=4.3-6ubuntu1 \
     libjpeg-turbo8=1.3.0-0ubuntu2 \
     qemu-system=2.0.0~rc1+dfsg-0ubuntu3 \
-    erlang=1:16.b.3-dfsg-1ubuntu2 \
-    php5-cli=5.5.9+dfsg-1ubuntu4 \
-    php5-cgi=5.5.9+dfsg-1ubuntu4 \
-    libapache2-mod-php5=5.5.9+dfsg-1ubuntu4 \
-    php5-fpm=5.5.9+dfsg-1ubuntu4 \
+    libminiupnpc8=1.6-3ubuntu2 \
+    dovecot-core=1:2.2.9-1ubuntu2 \
+    libcurl3-nss=7.35.0-1ubuntu2 \
+    isc-dhcp-relay=4.2.4-7ubuntu12 \
+    # php5-fpm=5.5.9+dfsg-1ubuntu4 \
     apache2-bin=2.4.7-1ubuntu4 \
     openssl=1.0.1f-1ubuntu2 \
     curl \
