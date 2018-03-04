@@ -2,6 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Ash Wilson
 
 RUN apt-get update && \
+    apt-get upgrade && \
     apt-get install -y \
     apt-transport-https \
     curl \
