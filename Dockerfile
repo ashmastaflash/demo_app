@@ -12,7 +12,7 @@ RUN apt-get update && \
     dovecot-core=1:2.2.9-1ubuntu2 \
     libcurl3-nss=7.35.0-1ubuntu2 \
     apache2-bin=2.4.7-1ubuntu4 \
-    openssl=1.0.1f-1ubuntu2 \
+    # openssl=1.0.1f-1ubuntu2 \
     curl \
     nginx \
     python \
