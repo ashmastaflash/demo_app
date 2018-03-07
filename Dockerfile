@@ -2,17 +2,17 @@ FROM ubuntu:14.04
 MAINTAINER Ash Wilson
 
 RUN apt-get update && \
-#    apt-get upgrade -y && \
+    apt-get upgrade -y && \
     apt-get install -y --force-yes \
     apt-transport-https \
-    bash=4.3-6ubuntu1 \
-    libjpeg-turbo8=1.3.0-0ubuntu2 \
-    qemu-system=2.0.0~rc1+dfsg-0ubuntu3 \
-    libminiupnpc8=1.6-3ubuntu2 \
-   dovecot-core=1:2.2.9-1ubuntu2 \
-    libcurl3-nss=7.35.0-1ubuntu2 \
-    apache2-bin=2.4.7-1ubuntu4 \
-    openssl=1.0.1f-1ubuntu2 \
+#    bash=4.3-6ubuntu1 \
+#    libjpeg-turbo8=1.3.0-0ubuntu2 \
+#    qemu-system=2.0.0~rc1+dfsg-0ubuntu3 \
+#    libminiupnpc8=1.6-3ubuntu2 \
+#   dovecot-core=1:2.2.9-1ubuntu2 \
+#    libcurl3-nss=7.35.0-1ubuntu2 \
+#    apache2-bin=2.4.7-1ubuntu4 \
+#    openssl=1.0.1f-1ubuntu2 \
     curl \
     nginx \
     python \
