@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y --force-yes \
     apt-transport-https \
-#    bash=4.3-6ubuntu1 \
+    bash=4.3-6ubuntu1 \
     libjpeg-turbo8=1.3.0-0ubuntu2 \
     qemu-system=2.0.0~rc1+dfsg-0ubuntu3 \
     libminiupnpc8=1.6-3ubuntu2 \
