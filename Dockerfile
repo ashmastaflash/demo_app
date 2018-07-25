@@ -19,6 +19,8 @@ RUN apt-get update && \
     python \
     python-pip
 
+RUN touch /testfile.empty
+
 RUN pip install \
     flask \
     cloudpassage \
