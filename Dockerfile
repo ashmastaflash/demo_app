@@ -21,8 +21,11 @@ RUN apt-get update && \
 
 RUN touch /testfile.empty
 
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+RUN /usr/bin/python2.7 get-pip.py
 RUN /usr/bin/python2.7 \
-        pip install \
+        -m pip install \
             flask \
             cloudpassage \
             pytest
