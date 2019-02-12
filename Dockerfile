@@ -21,10 +21,11 @@ RUN apt-get update && \
 
 RUN touch /testfile.empty
 
-RUN pip install \
-    flask \
-    cloudpassage \
-    pytest
+RUN /usr/bin/python2.7 \
+        pip install \
+            flask \
+            cloudpassage \
+            pytest
 
 # RUN echo 'deb https://production.packages.cloudpassage.com/debian debian main' | tee /etc/apt/sources.list.d/cloudpassage.list > /dev/null
 # RUN curl https://production.packages.cloudpassage.com/cloudpassage.packages.key | apt-key add -
@@ -41,4 +42,4 @@ ENV FLASK_APP=runner.py
 
 EXPOSE 5000
 
-CMD python -m flask run --host=0.0.0.0
+CMD /usr/bin/python2.7 -m flask run --host=0.0.0.0
