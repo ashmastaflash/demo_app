@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Ash Wilson
 
 RUN apt-get update && \
-    apt-get upgrade -y && \
+#    apt-get upgrade -y && \
     apt-get install -y --force-yes \
     apt-transport-https \
     bash=4.3-14ubuntu1 \
